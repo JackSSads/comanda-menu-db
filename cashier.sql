@@ -11,24 +11,3 @@ CREATE TABLE IF NOT EXISTS cashier (
     created_at		DATETIME DEFAULT CURRENT_TIMESTAMP,
     updated_at		DATETIME ON UPDATE CURRENT_TIMESTAMP
 );
-
-SELECT * FROM cashier LIMIT 1;
-
--- Inserindo dados
-INSERT INTO cashier (lenght_cheks) VALUES (0);
-
-UPDATE cashier
-SET
-	lenght_cheks = 10,
-	lenght_products = 10,
-	total_value = @quantity_products,
-	status = 0
-WHERE cashier_id = 1;
-
-UPDATE cashier
-SET
-	lenght_cheks = 10,
-	lenght_products = 10,
-	total_value = @quantity_products,
-	status = 0
-WHERE cashier_id = 1;
