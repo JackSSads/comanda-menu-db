@@ -5,6 +5,7 @@ CREATE TABLE IF NOT EXISTS comanda_menu.check (
 	total_value			FLOAT DEFAULT 0,
 	status				BOOLEAN DEFAULT 1,
 	pay_form			VARCHAR(10) DEFAULT NULL,
+	created_for                     BOOLEAN DEFAULT 0, -- 0 garcom, 1 site
 	cashier_id			INTEGER NOT NULL,
 	created_at			DATETIME DEFAULT CURRENT_TIMESTAMP,
 	updated_at			DATETIME ON UPDATE CURRENT_TIMESTAMP,
